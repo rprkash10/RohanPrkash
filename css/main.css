@@ -8,51 +8,6 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-.toggle {
-  display: inline-block;
-  position: relative;
-  width: 70px;
-  height: 34px;
-}
-
-.toggle__input {
-  display: none;
-}
-
-.toggle__label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 34px;
-  background: #ccc;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  text-indent: -9999px;
-}
-
-.toggle__input:checked + .toggle__label {
-  background: #2196f3;
-}
-
-.toggle__label::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
-  transition: transform 0.2s;
-}
-
-.toggle__input:checked + .toggle__label::after {
-  transform: translateX(36px);
-}
-
 
 body {
   padding: 0;
